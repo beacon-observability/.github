@@ -10,6 +10,7 @@ Beacon 是基于 [OpenTelemetry](https://opentelemetry.io/) 的多语言应用�
 | [beacon](https://github.com/beacon-observability/beacon) | 产品介绍、语言入口、维护原则与路线图 |
 | [beacon-java](https://github.com/beacon-observability/beacon-java) | Beacon Java 源码、开发文档与发行准备 |
 | [beacon-python](https://github.com/beacon-observability/beacon-python) | Beacon Python 源码、开发文档与发行准备 |
+| [beacon-php](https://github.com/beacon-observability/beacon-php) | Beacon PHP 源码、开发文档与发行准备 |
 
 ## 当前状态
 
