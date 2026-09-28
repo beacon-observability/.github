@@ -1,6 +1,3 @@
-<p align="center">
-  <img src="logo.png" alt="Beacon Observability Logo" width="180">
-</p>
 
 # Beacon Observability
 
