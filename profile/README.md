@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="logo.png" alt="Beacon Observability Logo" width="180">
+</p>
+
 # Beacon Observability
 
 Beacon 是基于 [OpenTelemetry](https://opentelemetry.io/) 的多语言应用探针项目。我们按语言独立维护源码、上游同步、测试和发行，同时提供统一的产品入口与公共维护原则。
