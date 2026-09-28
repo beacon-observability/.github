@@ -1,6 +1,6 @@
 # Beacon Observability
 
-Beacon 是 GuanceCloud 基于 [OpenTelemetry](https://opentelemetry.io/) 维护的多语言应用探针项目。我们按语言独立维护源码、上游同步、测试和发行，同时提供统一的产品入口与公共维护原则。
+Beacon 是基于 [OpenTelemetry](https://opentelemetry.io/) 的多语言应用探针项目。我们按语言独立维护源码、上游同步、测试和发行，同时提供统一的产品入口与公共维护原则。
 
 ## 项目入口
 
