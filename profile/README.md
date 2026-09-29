@@ -12,7 +12,7 @@
 <p align="center">
   <a href="https://github.com/beacon-observability/beacon">Project overview</a>
   ·
-  <a href="https://github.com/beacon-observability/docs">Documentation</a>
+  <a href="https://beacon-observability.github.io/docs/">Documentation</a>
   ·
   <a href="#language-projects">Language projects</a>
   ·
@@ -28,7 +28,8 @@ Language implementations and release schedules are intentionally independent. A 
 ## Start here
 
 - **Product and architecture:** [beacon](https://github.com/beacon-observability/beacon)
-- **User documentation:** [docs](https://github.com/beacon-observability/docs)
+- **User documentation:** [beacon-observability.github.io/docs](https://beacon-observability.github.io/docs/)
+- **Documentation source:** [docs](https://github.com/beacon-observability/docs)
 - **Installation and artifacts:** use the latest release from the relevant language repository
 - **Issues and feature requests:** open an issue in the repository that owns the affected language or component
 
