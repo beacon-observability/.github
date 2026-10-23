@@ -5,9 +5,9 @@
 <h1 align="center">Beacon Observability</h1>
 
 <p align="center">
-  Zero-code application observability with
-  <a href="https://opentelemetry.io/">OpenTelemetry</a>-based server instrumentation
-  and browser RUM through Rumable.
+  Application observability with
+  <a href="https://opentelemetry.io/">OpenTelemetry</a>-based server instrumentation,
+  Rust tracing through fastrace, and browser RUM through Rumable.
 </p>
 
 <p align="center">
@@ -22,7 +22,7 @@
 
 ## About Beacon
 
-Beacon maintains independently versioned server instrumentation and browser RUM projects. Each language agent preserves its OpenTelemetry upstream history, records an exact source baseline, and owns its build, validation, release, and support scope. Rumable adds browser monitoring through Nginx or IIS without changing application source code.
+Beacon maintains independently versioned server instrumentation, Rust tracing, and browser RUM projects. Each project records its upstream baseline, selects its own maintenance model, and owns its build, validation, release, and support scope. Rumable adds browser monitoring through Nginx or IIS without changing application source code.
 
 Component implementations and release schedules are intentionally independent. A capability or release in one component does not imply the same capability or support level in another. Refer to each repository and versioned release notes for installation instructions, validated environments, and known limitations.
 
@@ -44,8 +44,13 @@ Component implementations and release schedules are intentionally independent. A
 | .NET | [beacon-dotnet](https://github.com/beacon-observability/beacon-dotnet) | [Latest release](https://github.com/beacon-observability/beacon-dotnet/releases/latest) |
 | Node.js | [beacon-nodejs](https://github.com/beacon-observability/beacon-nodejs) | [Latest release](https://github.com/beacon-observability/beacon-nodejs/releases/latest) |
 | PHP | [beacon-php](https://github.com/beacon-observability/beacon-php) | [Latest release](https://github.com/beacon-observability/beacon-php/releases/latest) |
+| Rust tracing library | [fastrace](https://github.com/beacon-observability/fastrace) | Development source; no separate Beacon release |
 | PHP native instrumentation | [beacon-php-instrumentation](https://github.com/beacon-observability/beacon-php-instrumentation) | [Latest release](https://github.com/beacon-observability/beacon-php-instrumentation/releases/latest) |
 | Rumable (browser RUM) | [rumable](https://github.com/beacon-observability/rumable) | [Latest release](https://github.com/beacon-observability/rumable/releases/latest) |
+
+## Rust tracing with fastrace
+
+Fastrace is based on `fast/fastrace` and uses source-baseline synchronization without a GitHub fork relationship. Its [language entry](https://github.com/beacon-observability/beacon/blob/main/docs/languages.md#rust) links to the exact development acceptance scope. A possible future `beacon-rust` project based on OpenTelemetry Rust remains separate.
 
 ## Browser RUM with Rumable
 
@@ -55,7 +60,7 @@ Start with the [Rumable guide](https://beacon-observability.github.io/docs/rumab
 
 ## Maintenance principles
 
-- Preserve upstream Git history, licenses, package identities, and source provenance.
+- Preserve upstream licenses, package identities, and source provenance; retain Git history where the maintenance model includes it.
 - Keep Beacon-specific enhancements, tests, versions, and release processes explicit.
 - Pin reviewed upstream commits or releases instead of silently following moving branches.
 - Validate release artifacts in clean environments and publish checksums with versioned release notes.
