@@ -30,6 +30,7 @@ Component implementations and release schedules are intentionally independent. A
 
 - **Product and architecture:** [beacon](https://github.com/beacon-observability/beacon)
 - **User documentation:** [beacon-observability.github.io/docs](https://beacon-observability.github.io/docs/)
+- **Ruby:** [Ruby source integration guide](https://beacon-observability.github.io/docs/ruby) ([简体中文](https://beacon-observability.github.io/docs/zh-Hans/ruby))
 - **Browser RUM:** [Rumable setup guide](https://beacon-observability.github.io/docs/rumable) and [English configuration page](https://beacon-observability.github.io/rumable/latest/setup/index.html)
 - **Documentation source:** [docs](https://github.com/beacon-observability/docs)
 - **Installation and artifacts:** use the latest release from the relevant component repository
@@ -44,9 +45,16 @@ Component implementations and release schedules are intentionally independent. A
 | .NET | [beacon-dotnet](https://github.com/beacon-observability/beacon-dotnet) | [Latest release](https://github.com/beacon-observability/beacon-dotnet/releases/latest) |
 | Node.js | [beacon-nodejs](https://github.com/beacon-observability/beacon-nodejs) | [Latest release](https://github.com/beacon-observability/beacon-nodejs/releases/latest) |
 | PHP | [beacon-php](https://github.com/beacon-observability/beacon-php) | [Latest release](https://github.com/beacon-observability/beacon-php/releases/latest) |
+| Ruby source integration | [beacon-ruby](https://github.com/beacon-observability/beacon-ruby) | [Latest source release](https://github.com/beacon-observability/beacon-ruby/releases/latest) |
 | Rust tracing library | [fastrace](https://github.com/beacon-observability/fastrace) | [v0.1.0 source release](https://github.com/beacon-observability/fastrace/releases/tag/v0.1.0) |
 | PHP native instrumentation | [beacon-php-instrumentation](https://github.com/beacon-observability/beacon-php-instrumentation) | [Latest release](https://github.com/beacon-observability/beacon-php-instrumentation/releases/latest) |
 | Rumable (browser RUM) | [rumable](https://github.com/beacon-observability/rumable) | [Latest release](https://github.com/beacon-observability/rumable/releases/latest) |
+
+## Ruby source integration
+
+Beacon Ruby provides a source release based on OpenTelemetry Ruby Contrib. Applications explicitly integrate instrumentation gems and initialize the OpenTelemetry SDK. Use the [Ruby guide](https://beacon-observability.github.io/docs/ruby) for source downloads, checksum verification, receiver checks, and rollback, and the [latest source release](https://github.com/beacon-observability/beacon-ruby/releases/latest) for release scope.
+
+The initial release validates the instrumentation base, Net::HTTP, and trace export to a local OpenTelemetry Collector over OTLP HTTP/protobuf. It does not publish a Beacon gem, executable agent, or zero-code preload. Other integrations and platforms, DataKit, metrics, logs, profiling, and Security remain outside its validated scope.
 
 ## Rust tracing with fastrace
 
